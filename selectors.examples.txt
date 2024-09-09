@@ -1,0 +1,9 @@
+//div[@class='book']
+.book
+
+//div[@class='book']/span[1]
+.book span:first-child
+
+//*[text()='Deacon King Kong']/../span[@class='genre']
+
+
