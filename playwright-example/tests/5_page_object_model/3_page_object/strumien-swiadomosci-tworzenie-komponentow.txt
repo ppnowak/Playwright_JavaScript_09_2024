@@ -1,0 +1,25 @@
+Page Object to nie zawsze musi byc cala strona, mozemy tutaj zdefiniowac pojedynczy komponent
+
+test("Tabelka", async ({ page }) => {
+
+    const tableLocator = page.locator("#someTableId");
+    const table = new TableComponent(tableLocator);
+
+    table.getHead(); // ["#", "Browser", "Share"]
+
+    table.getRow(0);
+    {
+        "#": "1",
+        "Browser": "Chrome",
+        "Share" : "	69.28%"
+    } 
+
+    table.getRows(); // [row1, row2, row3] - takie obiekty jak wyzej
+
+    table.getCell("Browser", 2); // "Firefox"
+
+    table.sortAscending("Browser");
+
+    table.getRow(0).getCell("Browser"); // "Chrome"
+
+})

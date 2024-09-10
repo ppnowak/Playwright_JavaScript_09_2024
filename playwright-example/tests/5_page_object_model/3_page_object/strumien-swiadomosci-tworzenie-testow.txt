@@ -1,0 +1,48 @@
+import { ShopMainPage } from '@pageObjects/ShopMainPage.class';
+
+test("Zadanie", async ({ page }) => {
+
+    const shop = new ShopMainPage(page);
+    page.open();
+    page.add("Vacuum Cleaner");
+    page.add("Vacuum Cleaner");
+    page.add("TV 50\" OLED");
+    page.checkCart([
+        "Vacuum Cleaner (x2, $6,898.00)",
+        "TV 50\" OLED (x1, $5,499.00)"
+    ], "Total: $12,397.00");
+
+})
+
+class ShopMainPage {
+
+    constructor(page) {
+        ...
+    }
+
+    open() {
+        ...
+    }
+
+    clickAddButton(productCode) {
+
+    }
+
+    waitForApi() {
+        
+    }
+
+    add(productCode) {
+        this.clickAddButton(productCode);
+        this.waitForApi();
+    }
+
+    // checkCartItems() {
+    //     expect(cartItems).toHaveText(...)
+    // }
+
+    // checkSubTotal() {
+    //     ...
+    // }
+
+}

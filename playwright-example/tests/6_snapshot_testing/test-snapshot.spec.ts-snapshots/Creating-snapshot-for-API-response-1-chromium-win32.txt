@@ -1,0 +1,3 @@
+200
+{"connection":"keep-alive","content-length":"152","content-type":"application/json; charset=utf-8","date":"Tue, 10 Sep 2024 13:52:28 GMT","etag":"W/\"98-aKUM/TyPg64GuH5qswFn4YuAQVg\"","server":"nginx/1.24.0 (Ubuntu)","x-powered-by":"Express"}
+[{"name":"Chrome","share":69.28},{"name":"Edge","share":7.75},{"name":"Firefox","share":7.48},{"name":"IE","share":5.21},{"name":"Safari","share":3.73}]

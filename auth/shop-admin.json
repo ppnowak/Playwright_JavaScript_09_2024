@@ -1,0 +1,15 @@
+{
+  "cookies": [
+    {
+      "name": "connect.sid",
+      "value": "s%3AVGUvB0Ma5l9w1wbcA7T9N3B-V3yoAm3R.atmg9kdVqZTnOyDvFZSw21T8f3sVMFaLMu3iy0wy%2Bnw",
+      "domain": "ui.breathtaking.website",
+      "path": "/",
+      "expires": 1725989892.780358,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
